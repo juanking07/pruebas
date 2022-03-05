@@ -206,7 +206,7 @@ def megadl(update,bot,message,megaurl,thread=None,jdb=None):
             file_name = f['name']
             megadl._download_file(f['handle'],f['key'],dest_path=None,dest_filename=file_name,is_public=False,progressfunc=downloadFile,args=(bot,message,thread),f_data=f['data'])
             if not megadl.stoping:
-                processFile(update,bot,message,file_name,thread=thread)
+                processFile(update,bot,message,file_name,thread=thread)8
         pass
     pass
 
@@ -230,7 +230,7 @@ def onmessage(update,bot:ObigramClient):
         
 
         #AQUI EL USUARIO DE TELEGRAM
-        tl_admin_user = 'AQUI VA LE NOMBRE DE USUARIO DE TEELGRAM Q VA ADMINISTRAR EL BOT'
+        tl_admin_user  =  'toni8790'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -523,7 +523,7 @@ def onmessage(update,bot:ObigramClient):
 def main():
     
     #TOKEN DEL BOT
-    bot_token = 'AQUI VA EL TOKEN DEL BOT'
+    bot_token = '5155732345:AAG0R9kMietTeH-c0tT_0jFJGW8sjDPUTo4'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
